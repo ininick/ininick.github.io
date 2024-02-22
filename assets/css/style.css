@@ -1501,12 +1501,32 @@ textarea.form-input::-webkit-resizer {
 /**
    * responsive larger than 450px screen
    */
-@media (min-width: 450px) {
+@media (min-width: 320px) {
   /**
      * client
      */
   .clients-item {
     min-width: calc(33.33% - 10px);
+  }
+  .education-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    padding: 30px;
+  }
+  .education-icon-box {
+    width: 100px;
+    height: 100px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .education-content-box {
+    text-align: center;
   }
   /**
      * #PORTFOLIO, certificate 
@@ -1520,7 +1540,7 @@ textarea.form-input::-webkit-resizer {
 /**
    * responsive larger than 580px screen
    */
-@media (min-width: 580px) {
+@media (min-width: 540px) {
   /**
      * CUSTOM PROPERTY
      */
@@ -1652,17 +1672,19 @@ textarea.form-input::-webkit-resizer {
   /* education history */
   .education-item {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
     gap: 18px;
     padding: 30px;
   }
   .education-icon-box {
-    margin-bottom: 0;
     margin-top: 5px;
+    margin-left: 38.5%;
+    justify-content: center;
   }
+
   .education-content-box {
-    text-align: left;
+    text-align: center;
   }
   /* testimonials */
   .testimonials-title {
